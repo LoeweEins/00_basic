@@ -3,15 +3,17 @@
   "idf.openOcdConfigs": [
     "board/esp32s3-builtin.cfg"
   ],
-  "idf.port": "detect",
+  "idf.port": "/dev/tty.usbmodem101",
   "idf.currentSetup": "/Users/zeenlong/.espressif/v6.0/esp-idf",
   "idf.customExtraVars": {
-    "IDF_TARGET": "esp32s3"
+    "IDF_TARGET": "esp32s3",
+    "OPENOCD_USB_ADAPTER_LOCATION": "0-1"
   },
   "clangd.path": "/Users/zeenlong/.espressif/tools/esp-clang/esp-20.1.1_20250829/esp-clang/bin/clangd",
   "clangd.arguments": [
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=/Users/zeenlong/Desktop/ATK_Project/00_basic/build"
-  ]
+  ],
+  "idf.flashType": "JTAG"
 }
